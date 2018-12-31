@@ -1,6 +1,7 @@
 # app.py
 from flask import Flask, jsonify
 from crawlers.sephora import getSephoraProducts
+import os
 app = Flask(__name__)
 port = int(os.environ.get('PORT', 5000)) 
 
