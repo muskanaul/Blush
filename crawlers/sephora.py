@@ -4,8 +4,8 @@ import requests
 import json
 import math
 import os
-from Category import Category
-from Product import Product
+from models.Category import Category
+from models.Product import Product
 
 
 #global variables
