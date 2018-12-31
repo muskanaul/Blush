@@ -26,8 +26,9 @@ def getSephoraProducts():
         test()        
     else:
         for c in categories:
-            c.products = getCategorySpecificRecords(c.node, c.name, c.recordCount)  
-            responseObject[c.name] = c.convertToJson()        
+            c.products = getCategorySpecificRecords(c.node, c.name, c.recordCount)
+
+    responseObject = [c.convertToJson() for c in categories]
     return responseObject
 
 def getCategoryAndRecordInfo():

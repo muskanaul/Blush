@@ -7,6 +7,7 @@ class Category:
 
     def convertToJson(self):
         return {
+        "categoryName": self.name,
         "recordCount": self.recordCount,
         "products": self.convertProductsToJson()
         }
