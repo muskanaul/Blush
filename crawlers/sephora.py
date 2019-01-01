@@ -21,11 +21,8 @@ testValue = 6
 def getSephoraProducts():
     responseObject = {}
     categories = getCategoryAndRecordInfo()
-    if _DEBUG_:
-        test()        
-    else:
-        for c in categories:
-            c.products = getCategorySpecificRecords(c.node, c.name, c.recordCount)
+    for c in categories:
+        c.products = getCategorySpecificRecords(c.node, c.name, c.recordCount)
     responseObject = [c.convertToJson() for c in categories]
     return responseObject
 
@@ -67,10 +64,6 @@ def getCategorySpecificRecords(node, name, recordCount):
                 x["currentSku"]["listPrice"], x["currentSku"]["salePrice"], x["currentSku"]["isLimitedEdition"], x["currentSku"]["isLimitedTimeOffer"])
                 products.append(p)
     return products
-
-def test():
-    categories[testValue].products = getCategorySpecificRecords(categories[testValue].node, categories[testValue].name, categories[testValue].recordCount)
-    responseObject[categories[testValue].name] = categories[testValue].convertToJson()
 
 if __name__ == "__main__":
     getSephoraProducts()
