@@ -9,7 +9,7 @@ from models.Product import Product
 
 
 #global variables
-headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11'}
+headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11', 'Accept': 'application/json', 'referer': 'https://google.ca'}
 base_url ='https://www.sephora.com/api/catalog/search?country_switch=ca&type=keyword&q=sale&icid2=meganav_sale_top_nav_link%3fpageSize=-1&currentPage=1&content=true&includeRegionsMap=true&page=60&currentPage=1'
 totalProducts = 0
 categories = []
