@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "blush",
+    "description": "This is a beauty/lifestyle dashboard to view sales/deals from various vendors",
+    "slug": "blush",
+    "privacy": "public",
+    "sdkVersion": "29.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
