@@ -1,4 +1,4 @@
-## 💗 😊 Blush 😊 💗
+## 😊 Blush 😊
 
 Blush is a mobile application that scrapes popular cosmetic brand websites and provides a user friendly experience to view products on sale. 
 It is implemented using React-Native (JavaScript) for the application component and Python for the backend API component. 
