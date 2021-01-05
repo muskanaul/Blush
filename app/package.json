@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "@shoutem/ui": "^0.23.4",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "create-react-class": "^15.6.3",
     "expo": "29.0.0",
     "prop-types": "^15.6.2",
